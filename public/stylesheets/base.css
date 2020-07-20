@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro';
+    line-height: 1.5rem;
+    --color-index: rgb(26, 118, 223);
+    --img-width: 174px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    background-color: #fcfcfc;
+    overflow-x: hidden;
+}
+
+p {
+    margin: 0;
+}
+
+ul,
+li,
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    margin: 0;
+    width: 100%;
+    background-color: white;
+}
+
+input:focus {
+    outline: 0;
+}
+
+.button {
+    height: 40px;
+    max-width: 100px;
+    width: 40px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: rgb(26, 118, 223);
+    color: white;
+}
+
+.button:focus {
+    border: 1px solid black;
+    box-shadow: 0 0 3px 3px rgb(26, 118, 223);
+}

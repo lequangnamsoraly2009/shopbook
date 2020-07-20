@@ -1,5 +1,1621 @@
-extends layout
-
-block content
-  h1= title
-  p Welcome to #{title}
+extends ./layouts/shared
+block header
+block main
+  main.main-app
+    .container-fluid
+      .row
+        .c-12.l-12.m-12.slide-show-img
+          ul.slideshow
+            li
+              span
+            li
+              span
+            li
+              span
+            li
+              span
+            li
+              span
+    .container
+      .row
+        .col.playlist
+          .playlist__heading
+            h1 Music PlayList
+          .playlist__wrap
+            .col.c-3.m-3.l-2
+              .playlist__item-wrap
+                a.playlist__item(href='#')
+                  .playlist__item-img
+                    img.playlist__item-img(src='/images/Playlist/fantasty.jpg' alt='')
+                    i.playlist__item-img-icon.far.fa-play-circle
+              .playlist__item-title
+                p.playlist__item-title Drop Love Is Sticky
+            .col.c-3.m-3.l-2
+              .playlist__item-wrap
+                a.playlist__item(href='#')
+                  .playlist__item-img
+                    img.playlist__item-img(src='/images/Playlist/butterfly.jpg' alt='')
+                    i.playlist__item-img-icon.far.fa-play-circle
+              .playlist__item-title
+                p.playlist__item-title Love Me
+            .col.c-3.m-3.l-2
+              .playlist__item-wrap
+                a.playlist__item(href='#')
+                  .playlist__item-img
+                    img.playlist__item-img(src='/images/Playlist/12.jpg' alt='')
+                    i.playlist__item-img-icon.far.fa-play-circle
+              .playlist__item-title
+                p.playlist__item-title Why You Tell That
+            .col.c-3.m-3.l-2
+              .playlist__item-wrap
+                a.playlist__item(href='#')
+                  .playlist__item-img
+                    img.playlist__item-img(src='/images/Playlist/17.jpg' alt='')
+                    i.playlist__item-img-icon.far.fa-play-circle
+              .playlist__item-title
+                p.playlist__item-title Drink Orange&apos;s
+            .col.c-3.m-3.l-2
+              .playlist__item-wrap
+                a.playlist__item(href='#')
+                  .playlist__item-img
+                    img.playlist__item-img(src='/images/Playlist/6.jpg' alt='')
+                    i.playlist__item-img-icon.far.fa-play-circle
+              .playlist__item-title
+                p.playlist__item-title Fix It!
+            .col.c-3.m-3.l-2
+              .playlist__item-wrap
+                a.playlist__item(href='#')
+                  .playlist__item-img
+                    img.playlist__item-img(src='/images/Playlist/9.jpg' alt='')
+                    i.playlist__item-img-icon.far.fa-play-circle
+              .playlist__item-title
+                p.playlist__item-title Anaconda Samp
+      .row
+        .album.col.l-8.m-12.c-12
+          .album__header
+            .album__header-heading
+              h1 Album
+            .album__header-sort
+              a.album__header-sort-hearing(href='#')
+                p Listen A Lot
+              a.album__header-sort-new(href='#')
+                p New Album
+          .album__list
+            .row
+              .col.c-3.m-3.l-3
+                .playlist__item-wrap
+                  a.playlist__item(href='#')
+                    .playlist__item-img
+                      img.playlist__item-img(src='/images/list/guitar.jpg' alt='')
+                      i.playlist__item-img-icon.far.fa-play-circle
+                .playlist__item-title
+                  p.playlist__item-title Really Love You
+              .col.c-3.m-3.l-3
+                .playlist__item-wrap
+                  a.playlist__item(href='#')
+                    .playlist__item-img
+                      img.playlist__item-img(src='/images/Playlist/11.jpg' alt='')
+                      i.playlist__item-img-icon.far.fa-play-circle
+                .playlist__item-title
+                  p.playlist__item-title Tell Me Why
+              .col.c-3.m-3.l-3
+                .playlist__item-wrap
+                  a.playlist__item(href='#')
+                    .playlist__item-img
+                      img.playlist__item-img(src='/images/Playlist/2.jpg' alt='')
+                      i.playlist__item-img-icon.far.fa-play-circle
+                .playlist__item-title
+                  p.playlist__item-title What The F*ck
+              .col.c-3.m-3.l-3
+                .playlist__item-wrap
+                  a.playlist__item(href='#')
+                    .playlist__item-img
+                      img.playlist__item-img(src='/images/Playlist/12.jpg' alt='')
+                      i.playlist__item-img-icon.far.fa-play-circle
+                .playlist__item-title
+                  p.playlist__item-title Something Else
+            .row
+              .col.c-3.m-3.l-3
+                .playlist__item-wrap
+                  a.playlist__item(href='#')
+                    .playlist__item-img
+                      img.playlist__item-img(src='/images/Top5/3.jpg' alt='')
+                      i.playlist__item-img-icon.far.fa-play-circle
+                .playlist__item-title
+                  p.playlist__item-title What are you doing
+              .col.c-3.m-3.l-3
+                .playlist__item-wrap
+                  a.playlist__item(href='#')
+                    .playlist__item-img
+                      img.playlist__item-img(src='/images/Top5/10.jpg' alt='')
+                      i.playlist__item-img-icon.far.fa-play-circle
+                .playlist__item-title
+                  p.playlist__item-title Cry
+              .col.c-3.m-3.l-3
+                .playlist__item-wrap
+                  a.playlist__item(href='#')
+                    .playlist__item-img
+                      img.playlist__item-img(src='/images/Top5/7.jpg' alt='')
+                      i.playlist__item-img-icon.far.fa-play-circle
+                .playlist__item-title
+                  p.playlist__item-title Bay L&ecirc;n N&agrave;o
+              .col.c-3.m-3.l-3
+                .playlist__item-wrap
+                  a.playlist__item(href='#')
+                    .playlist__item-img
+                      img.playlist__item-img(src='/images/Top5/14.jpg' alt='')
+                      i.playlist__item-img-icon.far.fa-play-circle
+                .playlist__item-title
+                  p.playlist__item-title The Windy
+        .charts.col.l-4.m-12.c-12
+          .charts__header
+            .charts__header-heading
+              h1 Charts Music
+            .charts__header-sort
+              a.charts__header-item.charts__header-item-active(href='#')
+                p VietNam
+              a.charts__header-item(href='#')
+                p China
+              a.charts__header-item(href='#')
+                p US-UK
+          .charts__table
+            ul.charts__list
+              li.charts__list-item
+                .charts__list-item-img-wrap
+                  img.charts__list-item-img(src='/images/Playlist/art.jpg' alt='')
+                  p 01
+                .charts__list-item-title
+                  a.charts__list-item-title-name(href='#')
+                    | Ch&#x1EAF;c C&oacute; Y&ecirc;u L&agrave; &Dstrok;&acirc;y
+                  .charts__list-item-title-auth
+                    p S&#x1A1;n T&#x1B0;&#x1EDD;ng MTP
+              li.charts__list-item
+                .charts__list-item-order-1
+                  | 02
+                .charts__list-item-title
+                  a.charts__list-item-title-name(href='#')
+                    | C&#x1EE9; Th&#x1EBF; R&#x1EDD;i Xa
+                  .charts__list-item-title-auth
+                    p Y&#x1EBF;n Tatoo
+              li.charts__list-item
+                .charts__list-item-order-2
+                  | 03
+                .charts__list-item-title
+                  a.charts__list-item-title-name(href='#')
+                    | Khi Gi&#x1EA5;c M&#x1A1; V&#x1EC1;
+                  .charts__list-item-title-auth
+                    p Th&aacute;i Trinh
+              li.charts__list-item
+                .charts__list-item-order
+                  | 04
+                .charts__list-item-title
+                  a.charts__list-item-title-name(href='#')
+                    | Cung &Dstrok;&agrave;n V&#x1EE1; &Dstrok;&ocirc;i
+                  .charts__list-item-title-auth
+                    p Chi Pu
+              li.charts__list-item
+                .charts__list-item-order
+                  | 05
+                .charts__list-item-title
+                  a.charts__list-item-title-name(href='#')
+                    | T&#x1EEB; Ch&#x1ED1;i Nh&#x1EB9; Nh&agrave;ng Th&ocirc;i
+                  .charts__list-item-title-auth
+                    p B&iacute;ch Ph&#x1B0;&#x1A1;ng - Ph&uacute;c Du
+      .row
+        .swiper-container
+          .swiper-heading
+            h1 New Release
+          .swiper-wrapper
+            a.swiper-slide(href='#')
+              .swiper-slide__wrap
+                img.swiper-slide__img(src='/images/list/cry.jpg' alt='')
+                i.swiper-slide__img-icon.far.fa-play-circle
+                .swiper-slide__content
+                  .swiper-slide__content-wrap
+                    .swiper-slide__content-song
+                      p Why You Tell Me
+                    .swiper-slide__content-auth
+                      p Soraly
+                  .swiper-slide__content-top
+                    .swiper-slide__top-number-1
+                      p #1
+                    .swiper-slide__top-compose
+                      p 20.07.2020
+            a.swiper-slide(href='#')
+              .swiper-slide__wrap
+                img.swiper-slide__img(src='/images/list/aston.jpg' alt='')
+                i.swiper-slide__img-icon.far.fa-play-circle
+                .swiper-slide__content
+                  .swiper-slide__content-wrap
+                    .swiper-slide__content-song
+                      p Astronomia Dance
+                    .swiper-slide__content-auth
+                      p Vicetone
+                  .swiper-slide__content-top
+                    .swiper-slide__top-number-2
+                      p #2
+                    .swiper-slide__top-compose
+                      p 19.07.2020
+            a.swiper-slide(href='#')
+              .swiper-slide__wrap
+                img.swiper-slide__img(src='/images/list/flower1.jpg' alt='')
+                i.swiper-slide__img-icon.far.fa-play-circle
+                .swiper-slide__content
+                  .swiper-slide__content-wrap
+                    .swiper-slide__content-song
+                      p What&apos;s Poppin
+                    .swiper-slide__content-auth
+                      p Jack Hariow
+                  .swiper-slide__content-top
+                    .swiper-slide__top-number-3
+                      p #3
+                    .swiper-slide__top-compose
+                      p 18.07.2020
+            a.swiper-slide(href='#')
+              .swiper-slide__wrap
+                img.swiper-slide__img(src='/images/list/flower3.jpg' alt='')
+                i.swiper-slide__img-icon.far.fa-play-circle
+                .swiper-slide__content
+                  .swiper-slide__content-wrap
+                    .swiper-slide__content-song
+                      p Don&apos;t Start Now
+                    .swiper-slide__content-auth
+                      p Dua Lipa
+                  .swiper-slide__content-top
+                    .swiper-slide__top-number
+                      p #4
+                    .swiper-slide__top-compose
+                      p 16.07.2020
+            a.swiper-slide(href='#')
+              .swiper-slide__wrap
+                img.swiper-slide__img(src='/images/list/hearmusic.jpg' alt='')
+                i.swiper-slide__img-icon.far.fa-play-circle
+                .swiper-slide__content
+                  .swiper-slide__content-wrap
+                    .swiper-slide__content-song
+                      p Nobody But You
+                    .swiper-slide__content-auth
+                      p Blake Shelton
+                  .swiper-slide__content-top
+                    .swiper-slide__top-number
+                      p #5
+                    .swiper-slide__top-compose
+                      p 16.07.2020
+            a.swiper-slide(href='#')
+              .swiper-slide__wrap
+                img.swiper-slide__img(src='/images/list/road.jpg' alt='')
+                i.swiper-slide__img-icon.far.fa-play-circle
+                .swiper-slide__content
+                  .swiper-slide__content-wrap
+                    .swiper-slide__content-song
+                      p Death Bed
+                    .swiper-slide__content-auth
+                      p Powfu
+                  .swiper-slide__content-top
+                    .swiper-slide__top-number
+                      p #6
+                    .swiper-slide__top-compose
+                      p 13.07.2020
+            a.swiper-slide(href='#')
+              .swiper-slide__wrap
+                img.swiper-slide__img(src='/images/list/tree.jpg' alt='')
+                i.swiper-slide__img-icon.far.fa-play-circle
+                .swiper-slide__content
+                  .swiper-slide__content-wrap
+                    .swiper-slide__content-song
+                      p High Fashion 
+                    .swiper-slide__content-auth
+                      p Roddy Ricch
+                  .swiper-slide__content-top
+                    .swiper-slide__top-number
+                      p #7
+                    .swiper-slide__top-compose
+                      p 16.06.2020
+            a.swiper-slide(href='#')
+              .swiper-slide__wrap
+                img.swiper-slide__img(src='/images/list/japan.jpg' alt='')
+                i.swiper-slide__img-icon.far.fa-play-circle
+                .swiper-slide__content
+                  .swiper-slide__content-wrap
+                    .swiper-slide__content-song
+                      p The Bones
+                    .swiper-slide__content-auth
+                      p Maren Morris
+                  .swiper-slide__content-top
+                    .swiper-slide__top-number
+                      p #8
+                    .swiper-slide__top-compose
+                      p 02.07.2020
+            a.swiper-slide(href='#')
+              .swiper-slide__wrap
+                img.swiper-slide__img(src='/images/list/line.jpg' alt='')
+                i.swiper-slide__img-icon.far.fa-play-circle
+                .swiper-slide__content
+                  .swiper-slide__content-wrap
+                    .swiper-slide__content-song
+                      p WaterMelon Sugar
+                    .swiper-slide__content-auth
+                      p Harry Styles
+                  .swiper-slide__content-top
+                    .swiper-slide__top-number
+                      p #9
+                    .swiper-slide__top-compose
+                      p 12.04.2020
+      .row
+        .col.l-4.m-6.c-12.new-release
+          ul.new-release__list
+            li.new-release__list-item
+              .new-release__list-item-wrap
+                a.new-release__list-item-img(href='#')
+                  img(src='/images/list/microware.jpg' alt='')
+                  i.new-release__list-item__img-icon.far.fa-play-circle
+                .new-release__list-item-content
+                  .new-release__list-item-content-song
+                    p Chuy&#x1EC7;n Ch&#x1B0;a K&#x1EC3;
+                  .new-release__list-item-content-auth
+                    p IG,Ng&#x1ECD;c
+              .new-release__list-item-info
+                a(href='#')
+                  i.fas.fa-ellipsis-h
+                .info-detail
+                  .info-detail__header
+                    .info-detail__header-img
+                      img(src='/images/list/microware.jpg' alt='')
+                    .info-detail__header-title
+                      .info-detail__header-title-song
+                        p Chuy&#x1EC7;n Ch&#x1B0;a K&#x1EC3;
+                      .info-detail__header-title-number
+                        .header-title-number__headphone
+                          i.fas.fa-headphones-alt
+                          p 7K
+                        .header-title-number__heart
+                          i.fas.fa-heart
+                          p 600
+                    .info-detail__header-hover
+                      .info-detail__header-hover-auth
+                        h4 SINGER:
+                        p IG,Ng&#x1ECD;c
+                      .info-detail__header-hover-album
+                        h4 ALBUM:
+                        p Love Story
+                      .info-detail__header-hover-category
+                        h4 CATEGORY:
+                        p VietNam
+                  .info-detail__down
+                    a(href='#')
+                      i.fas.fa-download
+                      p Download
+                  .info-detail__wrap
+                    ul.info-detail__wrap-list
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-heart
+                          p Add Library
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-plus
+                          p Add Playlists
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-play
+                          p Play Next
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-plus
+                          p Add Playlist
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-pen-alt
+                          p Contribute Lyric
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.far.fa-comment
+                          p Comment
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-share-alt
+                          p Share
+            li.new-release__list-item
+              .new-release__list-item-wrap
+                a.new-release__list-item-img(href='#')
+                  img(src='/images/newrelease/1.jpg' alt='')
+                  i.new-release__list-item__img-icon.far.fa-play-circle
+                .new-release__list-item-content
+                  .new-release__list-item-content-song
+                    p Hoa N&#x1EDF; Kh&ocirc;ng M&agrave;u
+                  .new-release__list-item-content-auth
+                    p Ho&agrave;i L&acirc;m
+              .new-release__list-item-info
+                a(href='#')
+                  i.fas.fa-ellipsis-h
+                .info-detail
+                  .info-detail__header
+                    .info-detail__header-img
+                      img(src='/images/newrelease/1.jpg' alt='')
+                    .info-detail__header-title
+                      .info-detail__header-title-song
+                        p Hoa N&#x1EDF; Kh&ocirc;ng M&agrave;u
+                      .info-detail__header-title-number
+                        .header-title-number__headphone
+                          i.fas.fa-headphones-alt
+                          p 2K
+                        .header-title-number__heart
+                          i.fas.fa-heart
+                          p 412
+                    .info-detail__header-hover
+                      .info-detail__header-hover-auth
+                        h4 SINGER:
+                        p Ho&agrave;i L&acirc;m
+                      .info-detail__header-hover-album
+                        h4 ALBUM:
+                        p T&igrave;m L&#x1EA1;i
+                      .info-detail__header-hover-category
+                        h4 CATEGORY:
+                        p VietNam
+                  .info-detail__down
+                    a(href='/music/VN-Song/HoaNoKhongMau-HoaiLam.mp3' download='HoaNoKhongMau-HoaiLam.mp3')
+                      i.fas.fa-download
+                      p Download
+                  .info-detail__wrap
+                    ul.info-detail__wrap-list
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-heart
+                          p Add Library
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-plus
+                          p Add Playlists
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-play
+                          p Play Next
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-plus
+                          p Add Playlist
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-pen-alt
+                          p Contribute Lyric
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.far.fa-comment
+                          p Comment
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-share-alt
+                          p Share
+            li.new-release__list-item
+              .new-release__list-item-wrap
+                a.new-release__list-item-img(href='#')
+                  img(src='/images/newrelease/2.jpg' alt='')
+                  i.new-release__list-item__img-icon.far.fa-play-circle
+                .new-release__list-item-content
+                  .new-release__list-item-content-song
+                    p Bu&#x1ED3;n L&agrave;m Chi Em &#x1A0;i
+                  .new-release__list-item-content-auth
+                    p Ho&agrave;i L&acirc;m
+              .new-release__list-item-info
+                a(href='#')
+                  i.fas.fa-ellipsis-h
+                .info-detail
+                  .info-detail__header
+                    .info-detail__header-img
+                      img(src='/images/newrelease/2.jpg' alt='')
+                    .info-detail__header-title
+                      .info-detail__header-title-song
+                        p Bu&#x1ED3;n L&agrave;m Chi Em &#x1A0;i
+                      .info-detail__header-title-number
+                        .header-title-number__headphone
+                          i.fas.fa-headphones-alt
+                          p 11K
+                        .header-title-number__heart
+                          i.fas.fa-heart
+                          p 1k2
+                    .info-detail__header-hover
+                      .info-detail__header-hover-auth
+                        h4 SINGER:
+                        p Ho&agrave;i L&acirc;m
+                      .info-detail__header-hover-album
+                        h4 ALBUM:
+                        p T&igrave;m L&#x1EA1;i
+                      .info-detail__header-hover-category
+                        h4 CATEGORY:
+                        p VietNam
+                  .info-detail__down
+                    a(href='/music/VN-Song/BuonLamChiEmOi-HoaiLam.mp3' download='BuonLamChiEmOi-HoaiLam.mp3')
+                      i.fas.fa-download
+                      p Download
+                  .info-detail__wrap
+                    ul.info-detail__wrap-list
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-heart
+                          p Add Library
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-plus
+                          p Add Playlists
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-play
+                          p Play Next
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-plus
+                          p Add Playlist
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-pen-alt
+                          p Contribute Lyric
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.far.fa-comment
+                          p Comment
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-share-alt
+                          p Share
+            li.new-release__list-item
+              .new-release__list-item-wrap
+                a.new-release__list-item-img(href='#')
+                  img(src='/images/newrelease/3.jpg' alt='')
+                  i.new-release__list-item__img-icon.far.fa-play-circle
+                .new-release__list-item-content
+                  .new-release__list-item-content-song
+                    p M&#x1ED9;t C&uacute; L&#x1EEB;a
+                  .new-release__list-item-content-auth
+                    p B&iacute;ch Ph&#x1B0;&#x1A1;ng
+              .new-release__list-item-info
+                a(href='#')
+                  i.fas.fa-ellipsis-h
+                .info-detail
+                  .info-detail__header
+                    .info-detail__header-img
+                      img(src='/images/newrelease/3.jpg' alt='')
+                    .info-detail__header-title
+                      .info-detail__header-title-song
+                        p M&#x1ED9;t C&uacute; L&#x1EEB;a
+                      .info-detail__header-title-number
+                        .header-title-number__headphone
+                          i.fas.fa-headphones-alt
+                          p 3.1K
+                        .header-title-number__heart
+                          i.fas.fa-heart
+                          p 139
+                    .info-detail__header-hover
+                      .info-detail__header-hover-auth
+                        h4 SINGER:
+                        p B&iacute;ch Ph&#x1B0;&#x1A1;ng
+                      .info-detail__header-hover-album
+                        h4 ALBUM:
+                        p Sad Memory
+                      .info-detail__header-hover-category
+                        h4 CATEGORY:
+                        p VietNam
+                  .info-detail__down
+                    a(href='/music/VN-Song/MotCuLua-BichPhuong.mp3' download='MotCuLua-BichPhuong.mp3')
+                      i.fas.fa-download
+                      p Download
+                  .info-detail__wrap
+                    ul.info-detail__wrap-list
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-heart
+                          p Add Library
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-plus
+                          p Add Playlists
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-play
+                          p Play Next
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-plus
+                          p Add Playlist
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-pen-alt
+                          p Contribute Lyric
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.far.fa-comment
+                          p Comment
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-share-alt
+                          p Share
+            li.new-release__list-item
+              .new-release__list-item-wrap
+                a.new-release__list-item-img(href='#')
+                  img(src='/images/newrelease/4.jpg' alt='')
+                  i.new-release__list-item__img-icon.far.fa-play-circle
+                .new-release__list-item-content
+                  .new-release__list-item-content-song
+                    p Mu&#x1ED1;n N&oacute;i V&#x1EDB;i Em
+                  .new-release__list-item-content-auth
+                    p Mu&#x1ED1;n N&oacute;i V&#x1EDB;i Em
+              .new-release__list-item-info
+                a(href='#')
+                  i.fas.fa-ellipsis-h
+                .info-detail
+                  .info-detail__header
+                    .info-detail__header-img
+                      img(src='/images/newrelease/4.jpg' alt='')
+                    .info-detail__header-title
+                      .info-detail__header-title-song
+                        p Mu&#x1ED1;n N&oacute;i V&#x1EDB;i Em
+                      .info-detail__header-title-number
+                        .header-title-number__headphone
+                          i.fas.fa-headphones-alt
+                          p 901
+                        .header-title-number__heart
+                          i.fas.fa-heart
+                          p 45
+                    .info-detail__header-hover
+                      .info-detail__header-hover-auth
+                        h4 SINGER:
+                        p T Team
+                      .info-detail__header-hover-album
+                        h4 ALBUM:
+                        p Really
+                      .info-detail__header-hover-category
+                        h4 CATEGORY:
+                        p VietNam
+                  .info-detail__down
+                    a(href='/music/VN-Song/MuonNoiVoiEm-TTeam.mp3' download='MuonNoiVoiEm-TTeam.mp3')
+                      i.fas.fa-download
+                      p Download
+                  .info-detail__wrap
+                    ul.info-detail__wrap-list
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-heart
+                          p Add Library
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-plus
+                          p Add Playlists
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-play
+                          p Play Next
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-plus
+                          p Add Playlist
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-pen-alt
+                          p Contribute Lyric
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.far.fa-comment
+                          p Comment
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-share-alt
+                          p Share
+            li.new-release__list-item
+              .new-release__list-item-wrap
+                a.new-release__list-item-img(href='#')
+                  img(src='/images/newrelease/5.jpg' alt='')
+                  i.new-release__list-item__img-icon.far.fa-play-circle
+                .new-release__list-item-content
+                  .new-release__list-item-content-song
+                    p em b&#x1ECF; h&uacute;t thu&#x1ED1;c ch&#x1B0;a ?
+                  .new-release__list-item-content-auth
+                    p B&iacute;ch Ph&#x1B0;&#x1A1;ng
+              .new-release__list-item-info
+                a(href='#')
+                  i.fas.fa-ellipsis-h
+                .info-detail
+                  .info-detail__header
+                    .info-detail__header-img
+                      img(src='/images/newrelease/5.jpg' alt='')
+                    .info-detail__header-title
+                      .info-detail__header-title-song
+                        p em b&#x1ECF; h&uacute;t thu&#x1ED1;c ch&#x1B0;a ?
+                      .info-detail__header-title-number
+                        .header-title-number__headphone
+                          i.fas.fa-headphones-alt
+                          p 21K
+                        .header-title-number__heart
+                          i.fas.fa-heart
+                          p 4k2
+                    .info-detail__header-hover
+                      .info-detail__header-hover-auth
+                        h4 SINGER:
+                        p B&iacute;ch Ph&#x1B0;&#x1A1;ng
+                      .info-detail__header-hover-album
+                        h4 ALBUM:
+                        p Sad Memory
+                      .info-detail__header-hover-category
+                        h4 CATEGORY:
+                        p VietNam
+                  .info-detail__down
+                    a(href='/music/VN-Song/EmBoHutThuocChua-BichPhuong.mp3' download='EmBoHutThuocChua-BichPhuong.mp3')
+                      i.fas.fa-download
+                      p Download
+                  .info-detail__wrap
+                    ul.info-detail__wrap-list
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-heart
+                          p Add Library
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-plus
+                          p Add Playlists
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-play
+                          p Play Next
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-plus
+                          p Add Playlist
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-pen-alt
+                          p Contribute Lyric
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.far.fa-comment
+                          p Comment
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-share-alt
+                          p Share
+            li.new-release__list-item
+              .new-release__list-item-wrap
+                a.new-release__list-item-img(href='#')
+                  img(src='/images/newrelease/6.jpg' alt='')
+                  i.new-release__list-item__img-icon.far.fa-play-circle
+                .new-release__list-item-content
+                  .new-release__list-item-content-song
+                    p N&#x1EBF;u C&oacute; M&#x1ED9;t Ng&agrave;y
+                  .new-release__list-item-content-auth
+                    p H&#x1B0;&#x1A1;ng Ly
+              .new-release__list-item-info
+                a(href='#')
+                  i.fas.fa-ellipsis-h
+                .info-detail
+                  .info-detail__header
+                    .info-detail__header-img
+                      img(src='/images/newrelease/6.jpg' alt='')
+                    .info-detail__header-title
+                      .info-detail__header-title-song
+                        p N&#x1EBF;u C&oacute; M&#x1ED9;t Ng&agrave;y
+                      .info-detail__header-title-number
+                        .header-title-number__headphone
+                          i.fas.fa-headphones-alt
+                          p 3.9K
+                        .header-title-number__heart
+                          i.fas.fa-heart
+                          p 462
+                    .info-detail__header-hover
+                      .info-detail__header-hover-auth
+                        h4 SINGER:
+                        p H&#x1B0;&#x1A1;ng Ly
+                      .info-detail__header-hover-album
+                        h4 ALBUM:
+                        p Day by Night
+                      .info-detail__header-hover-category
+                        h4 CATEGORY:
+                        p VietNam
+                  .info-detail__down
+                    a(href='/music/VN-Song/NeuCoMotNgay-HuongLyCover.mp3' download='NeuCoMotNgay-HuongLyCover.mp3')
+                      i.fas.fa-download
+                      p Download
+                  .info-detail__wrap
+                    ul.info-detail__wrap-list
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-heart
+                          p Add Library
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-plus
+                          p Add Playlists
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-play
+                          p Play Next
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-plus
+                          p Add Playlist
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-pen-alt
+                          p Contribute Lyric
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.far.fa-comment
+                          p Comment
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-share-alt
+                          p Share
+            li.new-release__list-item
+              .new-release__list-item-wrap
+                a.new-release__list-item-img(href='#')
+                  img(src='/images/newrelease/7.jpg' alt='')
+                  i.new-release__list-item__img-icon.far.fa-play-circle
+                .new-release__list-item-content
+                  .new-release__list-item-content-song
+                    p t&#x1EEB; ch&#x1ED1;i nh&#x1EB9; nh&agrave;ng th&ocirc;i!
+                  .new-release__list-item-content-auth
+                    p B&iacute;ch Ph&#x1B0;&#x1A1;ng
+              .new-release__list-item-info
+                a(href='#')
+                  i.fas.fa-ellipsis-h
+                .info-detail
+                  .info-detail__header
+                    .info-detail__header-img
+                      img(src='/images/newrelease/7.jpg' alt='')
+                    .info-detail__header-title
+                      .info-detail__header-title-song
+                        p t&#x1EEB; ch&#x1ED1;i nh&#x1EB9; nh&agrave;ng th&ocirc;i!
+                      .info-detail__header-title-number
+                        .header-title-number__headphone
+                          i.fas.fa-headphones-alt
+                          p 3.9K
+                        .header-title-number__heart
+                          i.fas.fa-heart
+                          p 1k1
+                    .info-detail__header-hover
+                      .info-detail__header-hover-auth
+                        h4 SINGER:
+                        p B&iacute;ch Ph&#x1B0;&#x1A1;ng
+                      .info-detail__header-hover-album
+                        h4 ALBUM:
+                        p Sad Memory
+                      .info-detail__header-hover-category
+                        h4 CATEGORY:
+                        p VietNam
+                  .info-detail__down
+                    a(href='/music/VN-Song/TuChoiNheNhangThoi-BichPhuong.mp3' download='TuChoiNheNhangThoi-BichPhuong.mp3')
+                      i.fas.fa-download
+                      p Download
+                  .info-detail__wrap
+                    ul.info-detail__wrap-list
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-heart
+                          p Add Library
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-plus
+                          p Add Playlists
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-play
+                          p Play Next
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-plus
+                          p Add Playlist
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-pen-alt
+                          p Contribute Lyric
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.far.fa-comment
+                          p Comment
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-share-alt
+                          p Share
+        .col.l-4.m-6.c-0.new-release
+          ul.new-release__list
+            li.new-release__list-item
+              .new-release__list-item-wrap
+                a.new-release__list-item-img(href='#')
+                  img(src='/images/newrelease/8.jpg' alt='')
+                  i.new-release__list-item__img-icon.far.fa-play-circle
+                .new-release__list-item-content
+                  .new-release__list-item-content-song
+                    p How You Like That
+                  .new-release__list-item-content-auth
+                    p BLACKPINK
+              .new-release__list-item-info
+                a(href='#')
+                  i.fas.fa-ellipsis-h
+                .info-detail
+                  .info-detail__header
+                    .info-detail__header-img
+                      img(src='/images/newrelease/8.jpg' alt='')
+                    .info-detail__header-title
+                      .info-detail__header-title-song
+                        p How You Like That
+                      .info-detail__header-title-number
+                        .header-title-number__headphone
+                          i.fas.fa-headphones-alt
+                          p 108K
+                        .header-title-number__heart
+                          i.fas.fa-heart
+                          p 34k
+                    .info-detail__header-hover
+                      .info-detail__header-hover-auth
+                        h4 SINGER:
+                        p BLACKPINK
+                      .info-detail__header-hover-album
+                        h4 ALBUM:
+                        p None
+                      .info-detail__header-hover-category
+                        h4 CATEGORY:
+                        p Korean
+                  .info-detail__down
+                    a(href='#')
+                      i.fas.fa-download
+                      p Download
+                  .info-detail__wrap
+                    ul.info-detail__wrap-list
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-heart
+                          p Add Library
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-plus
+                          p Add Playlists
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-play
+                          p Play Next
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-plus
+                          p Add Playlist
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-pen-alt
+                          p Contribute Lyric
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.far.fa-comment
+                          p Comment
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-share-alt
+                          p Share
+            li.new-release__list-item
+              .new-release__list-item-wrap
+                a.new-release__list-item-img(href='#')
+                  img(src='/images/newrelease/9.jpg' alt='')
+                  i.new-release__list-item__img-icon.far.fa-play-circle
+                .new-release__list-item-content
+                  .new-release__list-item-content-song
+                    p eight
+                  .new-release__list-item-content-auth
+                    p IU-SUGA
+              .new-release__list-item-info
+                a(href='#')
+                  i.fas.fa-ellipsis-h
+                .info-detail
+                  .info-detail__header
+                    .info-detail__header-img
+                      img(src='/images/newrelease/9.jpg' alt='')
+                    .info-detail__header-title
+                      .info-detail__header-title-song
+                        p eight
+                      .info-detail__header-title-number
+                        .header-title-number__headphone
+                          i.fas.fa-headphones-alt
+                          p 72K
+                        .header-title-number__heart
+                          i.fas.fa-heart
+                          p 24k1
+                    .info-detail__header-hover
+                      .info-detail__header-hover-auth
+                        h4 SINGER:
+                        p IU-SUGA
+                      .info-detail__header-hover-album
+                        h4 ALBUM:
+                        p Return
+                      .info-detail__header-hover-category
+                        h4 CATEGORY:
+                        p Korean
+                  .info-detail__down
+                    a(href='#')
+                      i.fas.fa-download
+                      p Download
+                  .info-detail__wrap
+                    ul.info-detail__wrap-list
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-heart
+                          p Add Library
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-plus
+                          p Add Playlists
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-play
+                          p Play Next
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-plus
+                          p Add Playlist
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-pen-alt
+                          p Contribute Lyric
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.far.fa-comment
+                          p Comment
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-share-alt
+                          p Share
+            li.new-release__list-item
+              .new-release__list-item-wrap
+                a.new-release__list-item-img(href='#')
+                  img(src='/images/newrelease/10.jpg' alt='')
+                  i.new-release__list-item__img-icon.far.fa-play-circle
+                .new-release__list-item-content
+                  .new-release__list-item-content-song
+                    p Take Me Hand
+                  .new-release__list-item-content-auth
+                    p Daishin Dance
+              .new-release__list-item-info
+                a(href='#')
+                  i.fas.fa-ellipsis-h
+                .info-detail
+                  .info-detail__header
+                    .info-detail__header-img
+                      img(src='/images/newrelease/10.jpg' alt='')
+                    .info-detail__header-title
+                      .info-detail__header-title-song
+                        p Take Me Hand
+                      .info-detail__header-title-number
+                        .header-title-number__headphone
+                          i.fas.fa-headphones-alt
+                          p 7K
+                        .header-title-number__heart
+                          i.fas.fa-heart
+                          p 600
+                    .info-detail__header-hover
+                      .info-detail__header-hover-auth
+                        h4 SINGER:
+                        p Daishin Dance
+                      .info-detail__header-hover-album
+                        h4 ALBUM:
+                        p Sad
+                      .info-detail__header-hover-category
+                        h4 CATEGORY:
+                        p Japan
+                  .info-detail__down
+                    a(href='' download='xxx.mp3')
+                      i.fas.fa-download
+                      p Download
+                  .info-detail__wrap
+                    ul.info-detail__wrap-list
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-heart
+                          p Add Library
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-plus
+                          p Add Playlists
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-play
+                          p Play Next
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-plus
+                          p Add Playlist
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-pen-alt
+                          p Contribute Lyric
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.far.fa-comment
+                          p Comment
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-share-alt
+                          p Share
+            li.new-release__list-item
+              .new-release__list-item-wrap
+                a.new-release__list-item-img(href='#')
+                  img(src='/images/newrelease/11.jpg' alt='')
+                  i.new-release__list-item__img-icon.far.fa-play-circle
+                .new-release__list-item-content
+                  .new-release__list-item-content-song
+                    p Sakura
+                  .new-release__list-item-content-auth
+                    p Ikimono Gakari
+              .new-release__list-item-info
+                a(href='#')
+                  i.fas.fa-ellipsis-h
+                .info-detail
+                  .info-detail__header
+                    .info-detail__header-img
+                      img(src='/images/newrelease/11.jpg' alt='')
+                    .info-detail__header-title
+                      .info-detail__header-title-song
+                        p Sakura
+                      .info-detail__header-title-number
+                        .header-title-number__headphone
+                          i.fas.fa-headphones-alt
+                          p 74K9
+                        .header-title-number__heart
+                          i.fas.fa-heart
+                          p 12k3
+                    .info-detail__header-hover
+                      .info-detail__header-hover-auth
+                        h4 SINGER:
+                        p Ikimono Gakari
+                      .info-detail__header-hover-album
+                        h4 ALBUM:
+                        p Sugar
+                      .info-detail__header-hover-category
+                        h4 CATEGORY:
+                        p Japan
+                  .info-detail__down
+                    a(href='#')
+                      i.fas.fa-download
+                      p Download
+                  .info-detail__wrap
+                    ul.info-detail__wrap-list
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-heart
+                          p Add Library
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-plus
+                          p Add Playlists
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-play
+                          p Play Next
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-plus
+                          p Add Playlist
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-pen-alt
+                          p Contribute Lyric
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.far.fa-comment
+                          p Comment
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-share-alt
+                          p Share
+            li.new-release__list-item
+              .new-release__list-item-wrap
+                a.new-release__list-item-img(href='#')
+                  img(src='/images/newrelease/12.jpg' alt='')
+                  i.new-release__list-item__img-icon.far.fa-play-circle
+                .new-release__list-item-content
+                  .new-release__list-item-content-song
+                    p G&#x1EB7;p Em &Dstrok;&uacute;ng L&uacute;c
+                  .new-release__list-item-content-auth
+                    p Lu&acirc;n Tang
+              .new-release__list-item-info
+                a(href='#')
+                  i.fas.fa-ellipsis-h
+                .info-detail
+                  .info-detail__header
+                    .info-detail__header-img
+                      img(src='/images/newrelease/12.jpg' alt='')
+                    .info-detail__header-title
+                      .info-detail__header-title-song
+                        p G&#x1EB7;p Em &Dstrok;&uacute;ng L&uacute;c
+                      .info-detail__header-title-number
+                        .header-title-number__headphone
+                          i.fas.fa-headphones-alt
+                          p 892
+                        .header-title-number__heart
+                          i.fas.fa-heart
+                          p 19
+                    .info-detail__header-hover
+                      .info-detail__header-hover-auth
+                        h4 SINGER:
+                        p Lu&acirc;n Tang
+                      .info-detail__header-hover-album
+                        h4 ALBUM:
+                        p None
+                      .info-detail__header-hover-category
+                        h4 CATEGORY:
+                        p China
+                  .info-detail__down
+                    a(href='#')
+                      i.fas.fa-download
+                      p Download
+                  .info-detail__wrap
+                    ul.info-detail__wrap-list
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-heart
+                          p Add Library
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-plus
+                          p Add Playlists
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-play
+                          p Play Next
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-plus
+                          p Add Playlist
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-pen-alt
+                          p Contribute Lyric
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.far.fa-comment
+                          p Comment
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-share-alt
+                          p Share
+            li.new-release__list-item
+              .new-release__list-item-wrap
+                a.new-release__list-item-img(href='#')
+                  img(src='/images/newrelease/13.jpg' alt='')
+                  i.new-release__list-item__img-icon.far.fa-play-circle
+                .new-release__list-item-content
+                  .new-release__list-item-content-song
+                    p LiLy
+                  .new-release__list-item-content-auth
+                    p Alan Walker
+              .new-release__list-item-info
+                a(href='#')
+                  i.fas.fa-ellipsis-h
+                .info-detail
+                  .info-detail__header
+                    .info-detail__header-img
+                      img(src='/images/newrelease/13.jpg' alt='')
+                    .info-detail__header-title
+                      .info-detail__header-title-song
+                        p LiLy
+                      .info-detail__header-title-number
+                        .header-title-number__headphone
+                          i.fas.fa-headphones-alt
+                          p 12K
+                        .header-title-number__heart
+                          i.fas.fa-heart
+                          p 3k2
+                    .info-detail__header-hover
+                      .info-detail__header-hover-auth
+                        h4 SINGER:
+                        p Alan Walker
+                      .info-detail__header-hover-album
+                        h4 ALBUM:
+                        p Dance Electronic
+                      .info-detail__header-hover-category
+                        h4 CATEGORY:
+                        p American
+                  .info-detail__down
+                    a(href='#')
+                      i.fas.fa-download
+                      p Download
+                  .info-detail__wrap
+                    ul.info-detail__wrap-list
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-heart
+                          p Add Library
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-plus
+                          p Add Playlists
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-play
+                          p Play Next
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-plus
+                          p Add Playlist
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-pen-alt
+                          p Contribute Lyric
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.far.fa-comment
+                          p Comment
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-share-alt
+                          p Share
+            li.new-release__list-item
+              .new-release__list-item-wrap
+                a.new-release__list-item-img(href='#')
+                  img(src='/images/newrelease/14.jpg' alt='')
+                  i.new-release__list-item__img-icon.far.fa-play-circle
+                .new-release__list-item-content
+                  .new-release__list-item-content-song
+                    p Something Just Like This
+                  .new-release__list-item-content-auth
+                    p J.Fla
+              .new-release__list-item-info
+                a(href='#')
+                  i.fas.fa-ellipsis-h
+                .info-detail
+                  .info-detail__header
+                    .info-detail__header-img
+                      img(src='/images/newrelease/14.jpg' alt='')
+                    .info-detail__header-title
+                      .info-detail__header-title-song
+                        p Something Just Like This
+                      .info-detail__header-title-number
+                        .header-title-number__headphone
+                          i.fas.fa-headphones-alt
+                          p 33K
+                        .header-title-number__heart
+                          i.fas.fa-heart
+                          p 12k2
+                    .info-detail__header-hover
+                      .info-detail__header-hover-auth
+                        h4 SINGER:
+                        p J.Fla
+                      .info-detail__header-hover-album
+                        h4 ALBUM:
+                        p Cover
+                      .info-detail__header-hover-category
+                        h4 CATEGORY:
+                        p Korean
+                  .info-detail__down
+                    a(href='#')
+                      i.fas.fa-download
+                      p Download
+                  .info-detail__wrap
+                    ul.info-detail__wrap-list
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-heart
+                          p Add Library
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-plus
+                          p Add Playlists
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-play
+                          p Play Next
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-plus
+                          p Add Playlist
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-pen-alt
+                          p Contribute Lyric
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.far.fa-comment
+                          p Comment
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-share-alt
+                          p Share
+            li.new-release__list-item
+              .new-release__list-item-wrap
+                a.new-release__list-item-img(href='#')
+                  img(src='/images/newrelease/15.jpg' alt='')
+                  i.new-release__list-item__img-icon.far.fa-play-circle
+                .new-release__list-item-content
+                  .new-release__list-item-content-song
+                    p Zombie
+                  .new-release__list-item-content-auth
+                    p Bad Wolves
+              .new-release__list-item-info
+                a(href='#')
+                  i.fas.fa-ellipsis-h
+                .info-detail
+                  .info-detail__header
+                    .info-detail__header-img
+                      img(src='/images/newrelease/15.jpg' alt='')
+                    .info-detail__header-title
+                      .info-detail__header-title-song
+                        p Zombie
+                      .info-detail__header-title-number
+                        .header-title-number__headphone
+                          i.fas.fa-headphones-alt
+                          p 1K3
+                        .header-title-number__heart
+                          i.fas.fa-heart
+                          p 418
+                    .info-detail__header-hover
+                      .info-detail__header-hover-auth
+                        h4 SINGER:
+                        p Bad Wolves
+                      .info-detail__header-hover-album
+                        h4 ALBUM:
+                        p Rock Life
+                      .info-detail__header-hover-category
+                        h4 CATEGORY:
+                        p American
+                  .info-detail__down
+                    a(href='#')
+                      i.fas.fa-download
+                      p Download
+                  .info-detail__wrap
+                    ul.info-detail__wrap-list
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-heart
+                          p Add Library
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-plus
+                          p Add Playlists
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-play
+                          p Play Next
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-plus
+                          p Add Playlist
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-pen-alt
+                          p Contribute Lyric
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.far.fa-comment
+                          p Comment
+                      li.info-detail__wrap-list-item
+                        a(href='#')
+                          i.fas.fa-share-alt
+                          p Share
+        .charts.col.l-4.m-0.c-0
+          .charts__header
+            .charts__header-heading
+              h1 Charts Music
+            .charts__header-sort
+              a.charts__header-item(href='#')
+                p VietNam
+              a.charts__header-item(href='#')
+                p China
+              a.charts__header-item.charts__header-item-active(href='#')
+                p US-UK
+          .charts__table
+            ul.charts__list
+              li.charts__list-item
+                .charts__list-item-img-wrap
+                  img.charts__list-item-img(src='/images/list/human.jpg' alt='')
+                  p 01
+                .charts__list-item-title
+                  a.charts__list-item-title-name(href='#')
+                    | Be Kind
+                  .charts__list-item-title-auth
+                    p Marshmello,Halsey
+              li.charts__list-item
+                .charts__list-item-order-1
+                  | 02
+                .charts__list-item-title
+                  a.charts__list-item-title-name(href='#')
+                    | Like That
+                  .charts__list-item-title-auth
+                    p Dojo Cat,Gucci Mane
+              li.charts__list-item
+                .charts__list-item-order-2
+                  | 03
+                .charts__list-item-title
+                  a.charts__list-item-title-name(href='#')
+                    | Rain On Me
+                  .charts__list-item-title-auth
+                    p Lady Gaga,Ariana Grande
+              li.charts__list-item
+                .charts__list-item-order
+                  | 04
+                .charts__list-item-title
+                  a.charts__list-item-title-name(href='#')
+                    | Forever
+                  .charts__list-item-title-auth
+                    p Fletcher
+              li.charts__list-item
+                .charts__list-item-order
+                  | 05
+                .charts__list-item-title
+                  a.charts__list-item-title-name(href='#')
+                    | Never Worn White
+                  .charts__list-item-title-auth
+                    p Katy Perry
+      .row
+        .swiper-container
+          .swiper-heading
+            h1 Top 5 Song
+          .swiper-wrapper
+            a.swiper-slide(href='#')
+              .swiper-slide__wrap
+                img.swiper-slide__img(src='/images/Top5/14.jpg' alt='')
+                i.swiper-slide__img-icon.far.fa-play-circle
+                .swiper-slide__content
+                  .swiper-slide__content-wrap
+                    .swiper-slide__content-song
+                      p C&oacute; Duy&ecirc;n Kh&ocirc;ng N&#x1EE3;
+                    .swiper-slide__content-auth
+                      p NB3 Ho&agrave;i B&#x1EA3;o
+                  .swiper-slide__content-top
+                    .swiper-slide__top-number-1
+                      p #1
+                    .swiper-slide__top-compose
+                      p 12.03.2020
+            a.swiper-slide(href='#')
+              .swiper-slide__wrap
+                img.swiper-slide__img(src='/images/Top5/4.jpg' alt='')
+                i.swiper-slide__img-icon.far.fa-play-circle
+                .swiper-slide__content
+                  .swiper-slide__content-wrap
+                    .swiper-slide__content-song
+                      p T&igrave;m T&ocirc;i
+                    .swiper-slide__content-auth
+                      p Kh&ocirc;i V&utilde; - Th&#x1ECF;
+                  .swiper-slide__content-top
+                    .swiper-slide__top-number-2
+                      p #2
+                    .swiper-slide__top-compose
+                      p 31.01.2019
+            a.swiper-slide(href='#')
+              .swiper-slide__wrap
+                img.swiper-slide__img(src='/images/Top5/15.jpg' alt='')
+                i.swiper-slide__img-icon.far.fa-play-circle
+                .swiper-slide__content
+                  .swiper-slide__content-wrap
+                    .swiper-slide__content-song
+                      p T&#x1EEB;ng Y&ecirc;u
+                    .swiper-slide__content-auth
+                      p Phan Duy Anh
+                  .swiper-slide__content-top
+                    .swiper-slide__top-number-3
+                      p #3
+                    .swiper-slide__top-compose
+                      p 18.10.2019
+            a.swiper-slide(href='#')
+              .swiper-slide__wrap
+                img.swiper-slide__img(src='/images/Top5/7.jpg' alt='')
+                i.swiper-slide__img-icon.far.fa-play-circle
+                .swiper-slide__content
+                  .swiper-slide__content-wrap
+                    .swiper-slide__content-song
+                      p Nh&#x1EEF;ng K&#x1EBB; M&#x1ED9;ng M&#x1A1;
+                    .swiper-slide__content-auth
+                      p Noo Ph&#x1B0;&#x1EDB;c Th&#x1ECB;nh
+                  .swiper-slide__content-top
+                    .swiper-slide__top-number
+                      p #4
+                    .swiper-slide__top-compose
+                      p 25.11.2018
+            a.swiper-slide(href='#')
+              .swiper-slide__wrap
+                img.swiper-slide__img(src='/images/Top5/10.jpg' alt='')
+                i.swiper-slide__img-icon.far.fa-play-circle
+                .swiper-slide__content
+                  .swiper-slide__content-wrap
+                    .swiper-slide__content-song
+                      p Thi&#x1EC7;p H&#x1ED3;ng Ng&#x1B0;&#x1EDD;i D&#x1B0;ng
+                    .swiper-slide__content-auth
+                      p X2X
+                  .swiper-slide__content-top
+                    .swiper-slide__top-number
+                      p #5
+                    .swiper-slide__top-compose
+                      p 02.09.2017
+  block footer
+  script(src='https://unpkg.com/swiper/swiper-bundle.min.js')
+  script(src='/javascripts/swiper-slide.js')

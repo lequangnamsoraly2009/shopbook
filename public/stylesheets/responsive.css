@@ -1,0 +1,117 @@
+/* Mobile and Tablet */
+
+@media (max-width: 1023px) {
+    .hide-on-mob-tab {
+        display: none;
+    }
+    .top-bar__login {
+        display: none;
+    }
+    .top-nav__list {
+        display: none;
+    }
+    .playlist__wrap {
+        overflow: hidden;
+    }
+    .new-release__list-item:hover .new-release__list-item__img-icon {
+        display: none !important;
+    }
+    .new-release__list-item:hover .new-release__list-item-info {
+        display: none;
+    }
+}
+
+
+/* Tablet */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tab {
+        display: none;
+    }
+    .top-bar__login-1 {
+        display: block !important;
+        padding-left: 25% !important;
+        padding-top: 4px;
+        margin: 20px 0;
+    }
+    .top-bar .nav-brand {
+        height: 70px;
+        padding-left: 0;
+    }
+    .slideshow {
+        list-style-type: none;
+        height: 300px !important;
+    }
+    .playlist__item-img-icon {
+        content: '';
+        position: absolute;
+        top: 41%;
+        left: 39%;
+        font-size: 2rem;
+        color: white;
+        display: none !important;
+    }
+    .slide-show-img {
+        height: 300px;
+        position: relative;
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width: 739px) {
+    .hide-on-mob {
+        display: none;
+    }
+    .top-bar__img {
+        height: 37px;
+        width: auto;
+    }
+    .top-bar .nav-brand {
+        height: 70px;
+        padding-top: 13px;
+        padding-left: 15px;
+    }
+    .top-bar__modal {
+        margin: 20px 0;
+        display: flex;
+    }
+    .top-bar__login-1 {
+        display: block !important;
+        padding-left: 25% !important;
+        padding-top: 4px;
+    }
+    .slideshow {
+        list-style-type: none;
+        height: 250px !important;
+    }
+    .playlist__item-img-icon {
+        content: '';
+        position: absolute;
+        top: 30%;
+        left: 36%;
+        font-size: 2rem;
+        color: white;
+        display: none !important;
+    }
+    .slide-show-img {
+        height: 250px;
+        position: relative;
+    }
+    .playlist__item-img {
+        width: 100%;
+        /* height: auto; */
+        border-radius: 4px;
+        position: relative;
+    }
+    .playlist__item-wrap {
+        margin-bottom: 20px;
+    }
+    .license-1 {
+        display: none !important;
+    }
+    .follow-us-for-mobile {
+        margin: 0 45% !important;
+    }
+}
