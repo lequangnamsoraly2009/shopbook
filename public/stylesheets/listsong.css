@@ -1,0 +1,103 @@
+    .song {
+        width: 100%;
+    }
+    
+    .heading {
+        margin: 40px 10px;
+    }
+    
+    .song-item {
+        display: flex;
+        justify-content: space-between;
+        height: 120px;
+        width: 100%;
+        border-bottom: 1px solid rgb(233, 238, 240);
+        border-radius: 10px;
+        cursor: pointer;
+        background-color: white;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    .song-item:hover {
+        background-color: rgb(159, 226, 235);
+    }
+    
+    .song-item-left {
+        display: flex;
+        width: 40%;
+    }
+    
+    .song-item-wrap {
+        display: flex;
+    }
+    
+    .song-item-img {
+        position: relative;
+    }
+    
+    .song-item-img img {
+        width: auto;
+        height: 120px;
+        border-radius: 5px;
+        justify-content: center;
+        margin-top: 5px;
+    }
+    
+    .song-item__img-icon {
+        position: absolute;
+        content: '';
+        top: 40%;
+        left: 44%;
+        color: white;
+        display: none !important;
+    }
+    
+    .song-item:hover {
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2);
+    }
+    
+    .song-item:hover .song-item-img img {
+        opacity: 0.5;
+    }
+    
+    .song-item:hover .song-item__img-icon {
+        display: block !important;
+    }
+    
+    .song-item-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-left: 5px;
+    }
+    
+    .song-item-content-song {
+        font-size: 1rem;
+        font-weight: 600;
+        color: rgba(0, 0, 0, 0.8);
+    }
+    
+    .song-item-content-auth {
+        font-size: 0.9rem;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.7);
+    }
+    
+    .song-item-middle {
+        width: 30%;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .song-item-right {
+        width: 30%;
+        margin-right: 10px;
+        text-align: center;
+    }
+    
+    .song-item-right-icon {
+        padding-right: 10px;
+        cursor: pointer;
+    }

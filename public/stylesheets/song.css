@@ -1,0 +1,138 @@
+    .information-song {
+        margin-bottom: 30px;
+    }
+    
+    .information-song__header {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .information-song__name {
+        display: flex;
+    }
+    
+    .information-song__name p {
+        font-size: 28px;
+        font-weight: 700;
+    }
+    
+    .information-song__singer p {
+        color: black;
+        padding-left: 20px;
+    }
+    
+    .information-song__singer p:hover,
+    .information-song__info-compose a:hover {
+        color: var(--color-index);
+    }
+    
+    .information-song__info {
+        margin-top: 10px;
+    }
+    
+    .information-song__info-compose {
+        font-weight: 500;
+        color: #999;
+    }
+    
+    .information-song__info-compose a {
+        color: black;
+        margin-left: 10px;
+    }
+    
+    .play-song {
+        margin-top: 30px;
+        height: 100px;
+        background-image: url('/images/SlideshowTop/3.jpg');
+        width: 100%;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .play-song-control {
+        justify-content: center;
+        margin: auto;
+        width: 85%;
+    }
+    
+    .information-song__detail {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 30px;
+    }
+    
+    .information-song__far-1,
+    .information-song__far-2,
+    .information-song__far-3 {
+        color: #999;
+        margin: 0 50px;
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+    
+    .information-song__far-1:hover,
+    .information-song__far-2:hover,
+    .information-song__far-3:hover {
+        color: var(--color-index);
+    }
+    
+    .information-song__detail-icon {
+        margin-right: 5px;
+    }
+    /* Lyric */
+    
+    .information-song__lyric {
+        margin-top: 30px;
+    }
+    
+    .information-song__lyric-header {
+        color: #888;
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        font-weight: 900;
+    }
+    
+    .information-song__lyric-main {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: rgb(91, 92, 92);
+        max-height: 300px;
+        border-radius: 3px;
+    }
+    
+    .style-3::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        background-color: #F5F5F5;
+    }
+    
+    .style-3::-webkit-scrollbar {
+        width: 6px;
+        background-color: #F5F5F5;
+    }
+    
+    .style-3::-webkit-scrollbar-thumb {
+        background-color: #8fe2e2;
+    }
+    /* Left */
+    
+    .information-song__qc img {
+        height: 315px;
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    .information-song__header p {
+        color: black;
+        font-size: 1.5rem;
+        margin: 20px 0;
+        font-weight: 900;
+    }
+    
+    .information-song__item {
+        border-bottom: 1px solid rgb(212, 197, 197);
+    }
+    
+    .mark-down-abc {
+        margin-top: 50px;
+    }

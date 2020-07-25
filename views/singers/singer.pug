@@ -1,0 +1,271 @@
+extends ../layouts/shared
+block header
+block main
+    main.main-app
+      section.banner-singer
+        .container
+          img(src='/images/SlideshowTop/6.jpg' alt='banner-singer')
+      section
+        .container
+          .row
+            .col.l-12.c-12.m-12
+              .singer-profile
+                .singer-profile__main
+                  a.singer-profile__main-img(href='#')
+                    img(src='/images/Top5/8.jpg' alt='')
+                  .singer-profile__main-wrap
+                    a.singer-profile__main-name(href='/singers/' + singer.id) 
+                      p=singer.name
+                    .singer-profile__main-follow 
+                      p=singer.follower + ' follower'
+                a.singer-profile__care(href='#')
+                  i.singer-profile__care-icon.fas.fa-user-check
+                  |  Care   
+      section
+        .container
+          .row
+            a.col.l-4.m-12.c-12.info-singer__img(href='#')
+              img(src='/images/Top5/13.jpg' alt='')
+              p.info-singer__song Thich Thi Den - Official 
+            .col.l-8.m-12.c-12.info-singer__content
+              p= singer.information
+      section
+        .container
+          .row
+            .list-song
+              .list-song__header
+                h2 LIST SONG
+              #style-scroll.list-song__list.scrollbar
+                .list-song__list-item
+                  .list-song__list-item-left
+                    p.list-song__list-item-left-number.list-song__list-item-left-number-1 1
+                    .new-release__list-item-wrap
+                      a.new-release__list-item-img(href='/products')
+                        img(src='/images/newrelease/13.jpg' alt='')
+                        i.new-release__list-item__img-icon.far.fa-play-circle
+                      .new-release__list-item-content
+                        .new-release__list-item-content-song
+                          p H&#x1ECF;i Th&abreve;m Nhau
+                        .new-release__list-item-content-auth
+                          p L&ecirc; B&#x1EA3;o B&igrave;nh
+                  .list-song__list-item-middle
+                    | 05:18
+                  .list-song__list-item-right
+                    i.list-song__list-item-right-icon.far.fa-heart
+                    i.list-song__list-item-right-icon.fas.fa-microphone
+                    i.list-song__list-item-right-icon.fas.fa-tv
+                .list-song__list-item
+                  .list-song__list-item-left
+                    p.list-song__list-item-left-number.list-song__list-item-left-number-2 2
+                    .new-release__list-item-wrap
+                      a.new-release__list-item-img(href='#')
+                        img(src='/images/newrelease/2.jpg' alt='')
+                        i.new-release__list-item__img-icon.far.fa-play-circle
+                      .new-release__list-item-content
+                        .new-release__list-item-content-song
+                          p Cu&#x1ED9;c Vui C&ocirc; &Dstrok;&#x1A1;n
+                        .new-release__list-item-content-auth
+                          p L&ecirc; B&#x1EA3;o B&igrave;nh
+                  .list-song__list-item-middle
+                    | 04:19
+                  .list-song__list-item-right
+                    i.list-song__list-item-right-icon.far.fa-heart
+                    i.list-song__list-item-right-icon.fas.fa-microphone
+                    i.list-song__list-item-right-icon.fas.fa-tv
+                .list-song__list-item
+                  .list-song__list-item-left
+                    p.list-song__list-item-left-number.list-song__list-item-left-number-3 3
+                    .new-release__list-item-wrap
+                      a.new-release__list-item-img(href='#')
+                        img(src='/images/newrelease/4.jpg' alt='')
+                        i.new-release__list-item__img-icon.far.fa-play-circle
+                      .new-release__list-item-content
+                        .new-release__list-item-content-song
+                          p B&#x1B0;&#x1EDB;c Qua &Dstrok;&#x1EDD;i Nhau
+                        .new-release__list-item-content-auth
+                          p L&ecirc; B&#x1EA3;o B&igrave;nh
+                  .list-song__list-item-middle
+                    | 04:40
+                  .list-song__list-item-right
+                    i.list-song__list-item-right-icon.far.fa-heart
+                    i.list-song__list-item-right-icon.fas.fa-microphone
+                    i.list-song__list-item-right-icon.fas.fa-tv
+                .list-song__list-item
+                  .list-song__list-item-left
+                    p.list-song__list-item-left-number 4
+                    .new-release__list-item-wrap
+                      a.new-release__list-item-img(href='#')
+                        img(src='/images/newrelease/6.jpg' alt='')
+                        i.new-release__list-item__img-icon.far.fa-play-circle
+                      .new-release__list-item-content
+                        .new-release__list-item-content-song
+                          p Y&ecirc;u V&#x1ED9;i V&agrave;ng
+                        .new-release__list-item-content-auth
+                          p L&ecirc; B&#x1EA3;o B&igrave;nh
+                  .list-song__list-item-middle
+                    | 05:19
+                  .list-song__list-item-right
+                    i.list-song__list-item-right-icon.far.fa-heart
+                    i.list-song__list-item-right-icon.fas.fa-microphone
+                    i.list-song__list-item-right-icon.fas.fa-tv
+                .list-song__list-item
+                  .list-song__list-item-left
+                    p.list-song__list-item-left-number 5
+                    .new-release__list-item-wrap
+                      a.new-release__list-item-img(href='#')
+                        img(src='/images/newrelease/3.jpg' alt='')
+                        i.new-release__list-item__img-icon.far.fa-play-circle
+                      .new-release__list-item-content
+                        .new-release__list-item-content-song
+                          p Th&iacute;ch Th&igrave; &Dstrok;&#x1EBF;n 
+                        .new-release__list-item-content-auth
+                          p L&ecirc; B&#x1EA3;o B&igrave;nh
+                  .list-song__list-item-middle
+                    | 04:15
+                  .list-song__list-item-right
+                    i.list-song__list-item-right-icon.far.fa-heart
+                    i.list-song__list-item-right-icon.fas.fa-microphone
+                    i.list-song__list-item-right-icon.fas.fa-tv
+                .list-song__list-item
+                  .list-song__list-item-left
+                    p.list-song__list-item-left-number 6
+                    .new-release__list-item-wrap
+                      a.new-release__list-item-img(href='#')
+                        img(src='/images/newrelease/15.jpg' alt='')
+                        i.new-release__list-item__img-icon.far.fa-play-circle
+                      .new-release__list-item-content
+                        .new-release__list-item-content-song
+                          p M&#x1B0;a
+                        .new-release__list-item-content-auth
+                          p Trung Qu&acirc;n Idol
+                  .list-song__list-item-middle
+                    | 05:02
+                  .list-song__list-item-right
+                    i.list-song__list-item-right-icon.far.fa-heart
+                    i.list-song__list-item-right-icon.fas.fa-microphone
+                    i.list-song__list-item-right-icon.fas.fa-tv
+                .list-song__list-item
+                  .list-song__list-item-left
+                    p.list-song__list-item-left-number 6
+                    .new-release__list-item-wrap
+                      a.new-release__list-item-img(href='#')
+                        img(src='/images/newrelease/1.jpg' alt='')
+                        i.new-release__list-item__img-icon.far.fa-play-circle
+                      .new-release__list-item-content
+                        .new-release__list-item-content-song
+                          p S&oacute;ng Gi&oacute;
+                        .new-release__list-item-content-auth
+                          p Jack
+                  .list-song__list-item-middle
+                    | 04:33
+                  .list-song__list-item-right
+                    i.list-song__list-item-right-icon.far.fa-heart
+                    i.list-song__list-item-right-icon.fas.fa-microphone
+                    i.list-song__list-item-right-icon.fas.fa-tv
+                .list-song__list-item
+                  .list-song__list-item-left
+                    p.list-song__list-item-left-number 7
+                    .new-release__list-item-wrap
+                      a.new-release__list-item-img(href='#')
+                        img(src='/images/newrelease/11.jpg' alt='')
+                        i.new-release__list-item__img-icon.far.fa-play-circle
+                      .new-release__list-item-content
+                        .new-release__list-item-content-song
+                          p T&igrave;nh Anh
+                        .new-release__list-item-content-auth
+                          p AVC
+                  .list-song__list-item-middle
+                    | 04:52
+                  .list-song__list-item-right
+                    i.list-song__list-item-right-icon.far.fa-heart
+                    i.list-song__list-item-right-icon.fas.fa-microphone
+                    i.list-song__list-item-right-icon.fas.fa-tv
+                .list-song__list-item
+                  .list-song__list-item-left
+                    p.list-song__list-item-left-number 8
+                    .new-release__list-item-wrap
+                      a.new-release__list-item-img(href='#')
+                        img(src='/images/newrelease/8.jpg' alt='')
+                        i.new-release__list-item__img-icon.far.fa-play-circle
+                      .new-release__list-item-content
+                        .new-release__list-item-content-song
+                          p Y&ecirc;u T&#x1EEB; &Dstrok;&acirc;u M&agrave; Ra
+                        .new-release__list-item-content-auth
+                          p Lil Zpoet
+                  .list-song__list-item-middle
+                    | 05:11
+                  .list-song__list-item-right
+                    i.list-song__list-item-right-icon.far.fa-heart
+                    i.list-song__list-item-right-icon.fas.fa-microphone
+                    i.list-song__list-item-right-icon.fas.fa-tv
+                .list-song__list-item
+                  .list-song__list-item-left
+                    p.list-song__list-item-left-number 9
+                    .new-release__list-item-wrap
+                      a.new-release__list-item-img(href='#')
+                        img(src='/images/newrelease/10.jpg' alt='')
+                        i.new-release__list-item__img-icon.far.fa-play-circle
+                      .new-release__list-item-content
+                        .new-release__list-item-content-song
+                          p D&#x1EEB;ng Th&#x1B0;&#x1A1;ng
+                        .new-release__list-item-content-auth
+                          p DatKKa
+                  .list-song__list-item-middle
+                    | 03:58
+                  .list-song__list-item-right
+                    i.list-song__list-item-right-icon.far.fa-heart
+                    i.list-song__list-item-right-icon.fas.fa-microphone
+                    i.list-song__list-item-right-icon.fas.fa-tv
+      section
+        .container
+          .list-singer
+            .list-song__header
+              h2 LIST SINGER SUGGEST
+            .row.list-singer__main
+              .col.l-3.m-4.c-6
+                .list-singer__main-wrap
+                  a.list-singer__main-img(href='#')
+                    img(src='/images/newrelease/9.jpg' alt='')
+                  a.list-singer__main-name(href='#')
+                    p Tr&#x1ECB;nh &Dstrok;&igrave;nh Quang
+                  .list-singer__main-follow
+                    p 96k follower
+                  a.singer-profile__care.list-singer__main-care(href='#')
+                    i.singer-profile__care-icon.fas.fa-user-check
+                    p Care
+              .col.l-3.m-4.c-6
+                .list-singer__main-wrap
+                  a.list-singer__main-img(href='#')
+                    img(src='/images/newrelease/9.jpg' alt='')
+                  a.list-singer__main-name(href='#')
+                    p Tr&#x1ECB;nh &Dstrok;&igrave;nh Quang
+                  .list-singer__main-follow
+                    p 96k follower
+                  a.singer-profile__care.list-singer__main-care(href='#')
+                    i.singer-profile__care-icon.fas.fa-user-check
+                    p Care
+              .col.l-3.m-4.c-6
+                .list-singer__main-wrap
+                  a.list-singer__main-img(href='#')
+                    img(src='/images/newrelease/9.jpg' alt='')
+                  a.list-singer__main-name(href='#')
+                    p Tr&#x1ECB;nh &Dstrok;&igrave;nh Quang
+                  .list-singer__main-follow
+                    p 96k follower
+                  a.singer-profile__care.list-singer__main-care(href='#')
+                    i.singer-profile__care-icon.fas.fa-user-check
+                    p Care
+              .col.l-3.m-0.c-6
+                .list-singer__main-wrap
+                  a.list-singer__main-img(href='#')
+                    img(src='/images/newrelease/9.jpg' alt='')
+                  a.list-singer__main-name(href='#')
+                    p Tr&#x1ECB;nh &Dstrok;&igrave;nh Quang
+                  .list-singer__main-follow
+                    p 96k follower
+                  a.singer-profile__care.list-singer__main-care(href='#')
+                    i.singer-profile__care-icon.fas.fa-user-check
+                    p Care
+      section
+        .container.mark-down
+block footer

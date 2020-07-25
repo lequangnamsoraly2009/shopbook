@@ -114,4 +114,10 @@
     .follow-us-for-mobile {
         margin: 0 45% !important;
     }
+    .list-song__list-item-middle {
+        display: none;
+    }
+    .list-song__list-item-right-icon.fas.fa-tv {
+        display: none;
+    }
 }

@@ -1,0 +1,267 @@
+.banner-singer {}
+
+.banner-singer img {
+    width: 1200px;
+    height: auto;
+}
+
+
+/* Profile */
+
+.singer-profile {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.singer-profile__main {
+    display: flex;
+}
+
+.singer-profile__main-img img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.singer-profile__main-wrap {
+    padding-left: 10px;
+}
+
+.singer-profile__main-name {
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+}
+
+.singer-profile__main-name:hover {
+    color: var(--color-index);
+}
+
+.singer-profile__main-follow {
+    color: #999;
+}
+
+.singer-profile__care {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #f7f7f7;
+    text-decoration: none;
+    color: var(--color-index);
+    border-radius: 10px;
+    background-color: rgb(234, 238, 240);
+}
+
+.singer-profile__care:hover {
+    background-color: white;
+    box-shadow: 2px 2px 5px 5px rgb(200, 203, 204);
+}
+
+.singer-profile__care-icon {
+    padding-left: 20px;
+    margin-top: 6px;
+}
+
+
+/* Information Singer */
+
+.info-singer__img {
+    position: relative;
+}
+
+.info-singer__song {
+    content: '';
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    top: 70%;
+    left: 5%;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.info-singer__img img {
+    width: 360px;
+    height: 215px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 2px 2px #999;
+}
+
+.info-singer__img img:hover {
+    opacity: 0.9;
+}
+
+.info-singer__content p {
+    font-weight: 400;
+}
+
+
+/* List Song */
+
+.list-song {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.list-song__header {
+    cursor: pointer;
+}
+
+.list-song__header h2 {
+    margin-left: 10px;
+}
+
+.list-song__list {
+    max-height: 300px;
+}
+
+.scrollbar {
+    margin-left: 5px;
+    float: left;
+    height: 300px;
+    width: 100%;
+    background: #F5F5F5;
+    overflow-y: scroll;
+    margin-bottom: 25px;
+    overflow-x: hidden;
+}
+
+#style-scroll::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+#style-scroll::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+#style-scroll::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #555;
+}
+
+.list-song__list-item {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    border-bottom: 1px solid rgb(233, 238, 240);
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.list-song__list-item:hover {
+    background-color: rgb(159, 226, 235);
+}
+
+.list-song__list-item-left {
+    display: flex;
+    width: 400px;
+}
+
+.list-song__list-item-left-number {
+    padding: 15px 30px;
+    font-weight: 600;
+}
+
+.list-song__list-item-left-number-1 {
+    color: red;
+}
+
+.list-song__list-item-left-number-2 {
+    color: blue;
+}
+
+.list-song__list-item-left-number-3 {
+    color: green;
+}
+
+.list-song__list-item-middle {
+    margin-top: 17px;
+}
+
+.list-song__list-item-right {
+    margin-top: 17px;
+    margin-right: 10px;
+}
+
+.list-song__list-item-right-icon {
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+
+/* SUGGEST Singer */
+
+.list-singer {
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+.list-singer__main {}
+
+.list-singer__main-wrap {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    border: 1px solid rgb(233, 237, 238);
+    border-radius: 15px;
+    background-color: #f7f7f7;
+    align-items: center
+}
+
+.list-singer__main-img {
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.list-singer__main-img:hover {
+    transform: scale(1.15);
+    opacity: 0.7;
+}
+
+.list-singer__main-img img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+
+.list-singer__main-name,
+.list-singer__main-follow {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+}
+
+.list-singer__main-name:hover {
+    color: var(--color-index);
+}
+
+.list-singer__main-follow {
+    font-weight: 400 !important;
+}
+
+.list-singer__main-care {
+    display: flex;
+    margin: 30px 90px;
+}
+
+.list-singer__main-care p {
+    padding-left: 5px;
+    padding-top: 2px;
+}
+
+.mark-down {
+    height: 2px;
+    border-top: 2px solid #ebe5e5;
+}

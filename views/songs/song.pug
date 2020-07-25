@@ -1,0 +1,104 @@
+extends ../layouts/shared
+block header
+block main
+    main
+      .container
+        .row
+          section.col.l-8
+            .information-song
+              .information-song__header
+                .information-song__name
+                  p= song.name 
+                  .information-song__singer
+                    a.singer(href='/singers/' + song.idsinger)
+                      p= song.singer
+                .information-song__info
+                  .information-song__info-compose
+                    | Composed :
+                    a.information-song__singer(href='/singers')=song.composed
+                      
+                  .information-song__info-compose
+                    | Category :
+                    a.information-song__category(href='#')=song.category
+            .play-song
+              audio.play-song-control(controls='')
+                source(src='/assets/music/VN-Song/HoiThamNhau.mp3' type='audio/mpeg')
+                |                           Your browser does not support the audio element.
+            .information-song__detail
+              a.information-song__far-1(href='#')
+                i.information-song__detail-icon.far.fa-heart
+                |  Love
+              a.information-song__far-2(href='#')
+                i.information-song__detail-icon.fas.fa-plus
+                |  Add
+              a.information-song__far-3(href='#')
+                i.information-song__detail-icon.far.fa-share-square
+                |  Share
+            .information-song__lyric
+              .information-song__lyric-header
+                | Lyric This Song
+              .information-song__lyric-main.scrollbar.style-3
+                p= song.lyric1
+                p= song.lyric2
+                p= song.lyric3
+                p= song.lyric4
+                p= song.lyric5
+                p= song.lyric6
+                p= song.lyric7
+                p= song.lyric8
+                p= song.lyric9
+                p= song.lyric10
+                p= song.lyric11
+                p= song.lyric12
+                p= song.lyric13
+                p= song.lyric14
+                p= song.lyric15
+          .col.l-4
+            .information-song__qc
+              img(src='/images/list/guitar.jpg' alt='')
+            .information-song__continue
+              .information-song__header
+                p Listen Continue
+              .information-song__item
+                .new-release__list-item-wrap
+                  a.new-release__list-item-img(href='#')
+                    img(src='/images/newrelease/4.jpg' alt='')
+                    i.new-release__list-item__img-icon.far.fa-play-circle
+                  .new-release__list-item-content
+                    .new-release__list-item-content-song
+                      p Y&ecirc;u V&#x1ED9;i V&agrave;ng
+                    .new-release__list-item-content-auth
+                      p L&ecirc; B&#x1EA3;o B&igrave;nh
+              .information-song__item
+                .new-release__list-item-wrap
+                  a.new-release__list-item-img(href='#')
+                    img(src='/images/newrelease/1.jpg' alt='')
+                    i.new-release__list-item__img-icon.far.fa-play-circle
+                  .new-release__list-item-content
+                    .new-release__list-item-content-song
+                      p K&#x1EBF;t Th&uacute;c L&acirc;u R&#x1ED3;i
+                    .new-release__list-item-content-auth
+                      p L&ecirc; B&#x1EA3;o B&igrave;nh
+              .information-song__item
+                .new-release__list-item-wrap
+                  a.new-release__list-item-img(href='#')
+                    img(src='/images/newrelease/5.jpg' alt='')
+                    i.new-release__list-item__img-icon.far.fa-play-circle
+                  .new-release__list-item-content
+                    .new-release__list-item-content-song
+                      p V&#x1EE3; L&agrave; Nh&#x1EA5;t
+                    .new-release__list-item-content-auth
+                      p L&ecirc; B&#x1EA3;o B&igrave;nh
+              .information-song__item
+                .new-release__list-item-wrap
+                  a.new-release__list-item-img(href='#')
+                    img(src='/images/newrelease/8.jpg' alt='')
+                    i.new-release__list-item__img-icon.far.fa-play-circle
+                  .new-release__list-item-content
+                    .new-release__list-item-content-song
+                      p K&#x1EBF;t Th&uacute;c L&acirc;u R&#x1ED3;i
+                    .new-release__list-item-content-auth
+                      p L&ecirc; B&#x1EA3;o B&igrave;nh
+        section
+          .container.mark-down.mark-down-abc
+block footer

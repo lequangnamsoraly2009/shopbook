@@ -1,0 +1,57 @@
+extends ../layouts/shared
+block header
+block main
+  main
+    .container
+      .row
+        .col.l-12.c-12.m-12
+          .main-login
+            form#form-1.form(action='' method='POST')
+              h3.heading SIGN-UP
+              p.desc Become new member with Soraly &#x1F91E; 
+              .form-group
+                label.form-label(for='fullname') Full Name &#x1F631;
+                input#fullname.form-control(name='fullname' type='text' placeholder='Ex: Soraly')
+                span.form-message
+              .form-group
+                label.form-label(for='province') City
+                select#province.form-control(name='province')
+                  option(value='') --Choose--
+                  option(value='hcm') Ho Chi Minh City
+                  option(value='hno') Ha Noi Capital
+                  option(value='dno') Dak Nong Province
+                  option(value='dna') Da Nang City
+                span.form-message
+              .form-group
+                label.form-label(for='email') Email
+                input#email.form-control(name='email' type='text' placeholder='Ex: email@domain.com')
+                span.form-message
+              .form-group
+                label.form-label(for='password') Password &#x1F440;
+                input#password.form-control(name='password' type='password' placeholder='Password')
+                span.form-message
+              .form-group
+                label.form-label(for='password_confirmation') Confirm Password &#x1F926;&zwj;&female;&#xFE0F;
+                input#password_confirmation.form-control(name='password_confirmation' placeholder='Confirm Password' type='password')
+                span.form-message
+              button.form-submit Sign-Up
+block footer
+  script.
+    Validator({
+    form: '#form-1',
+    formInputGroup: '.form-group',
+    rules: [
+    Validator.isRequired('#fullname'),
+    Validator.isEmail('#email', 'This is not Email'),
+    Validator.minLength('#password', 6, 'Please enter this field'),
+    Validator.isRequired('#password_confirmation'),
+    Validator.isRequired('#province'),
+    Validator.isMatched('#password_confirmation', () => {
+    return document.querySelector('#form-1 #password').value
+    }, 'Password is not match')
+    ],
+    errorSelector: '.form-message',
+    onSubmit: data => {
+    console.log(data)
+    },
+    });

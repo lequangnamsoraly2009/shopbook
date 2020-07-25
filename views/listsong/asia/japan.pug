@@ -1,0 +1,28 @@
+extends ../../layouts/shared
+block header
+block main
+        main
+            .container
+                .row
+                    .song
+                        h1.heading LIST JAPAN MUSIC
+                        each song in songs
+                            a.song-item(href='/list-song/vn' + song.id)
+                                .song-item-left
+                                    .song-item-wrap
+                                        .song-item-img
+                                            img(src='/images/newrelease/13.jpg' alt='')
+                                            i.song-item__img-icon.far.fa-play-circle
+                                        .song-item-content
+                                            .song-item-content-song
+                                                p= song.name
+                                            .song-item-content-auth
+                                                p= song.singer
+                                .song-item-middle
+                                    span= song.countdown
+                                .song-item-right
+                                    i.song-item-right-icon.far.fa-heart
+                                    i.song-item-right-icon.fas.fa-microphone
+                                    i.song-item-right-icon.fas.fa-tv
+
+block footer

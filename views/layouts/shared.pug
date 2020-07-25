@@ -1,6 +1,6 @@
 doctype html
 head
-  title Music For Free
+  title Music Soraly
   link(rel='icon', href='/logo/music-and-multimedia.png', type='image/icon type')
   meta(charset='utf-8')
   meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
@@ -8,7 +8,12 @@ head
   link(rel='stylesheet', href='/stylesheets/main.css')
   link(rel='stylesheet', href='/stylesheets/grid-library.css')
   link(rel='stylesheet', href='/stylesheets/responsive.css')
+  link(rel="stylesheet", href="/stylesheets/login.css")
+  link(rel="stylesheet", href="/stylesheets/singer.css")
+  link(rel="stylesheet", href="/stylesheets/song.css")
+  link(rel="stylesheet", href="/stylesheets/listsong.css")
   link(rel='stylesheet', href='https://unpkg.com/swiper/swiper-bundle.min.css')
+  script(src="/javascripts/validate.js")
   link(href='https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,700;0,900;1,400&display=swap', rel='stylesheet')
   link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css')
   script(src='https://kit.fontawesome.com/678e5f521e.js', crossorigin='anonymous')
@@ -27,9 +32,9 @@ body
               a.search__link(href='#')
                 i.search__icon.fas.fa-search
           .top-bar__modal.c-2.m-2.l-2
-            a.top-bar__login(href='#')
+            a.top-bar__login(href='/login')
               p Sign-in
-            a.top-bar__login(href='#')
+            a.top-bar__login(href='/logout')
               p Sign-up
             a.top-bar__login-1(href='#')
               i.fas.fa-user
@@ -132,145 +137,7 @@ body
                     li.drop-down__col-item
                       a.drop-down__col-link(href='#') Violin
                     li.drop-down__col-item
-                      a.drop-down__col-link(href='#') Cello
-          li.top-nav__list-item
-            a.top-nav__list-item-link(href='#') TOPIC
-            .list-item__drop-down
-              .drop-down__row
-                .drop-down__col
-                  ul.drop-down__col-list
-                    li.drop-down__col-heading CATEGORY
-                    li.drop-down__col-item
-                      a.drop-down__col-link(href='#') EDM
-                    li.drop-down__col-item
-                      a.drop-down__col-link(href='#') Acoustic
-                    li.drop-down__col-item
-                      a.drop-down__col-link(href='#') Indie
-                    li.drop-down__col-item
-                      a.drop-down__col-link(href='#') Bolero
-                .drop-down__col
-                  ul.drop-down__col-list
-                    li.drop-down__col-heading OFFER
-                    li.drop-down__col-item
-                      a.drop-down__col-link(href='#')
-                        | Hot
-                        | Music
-                    li.drop-down__col-item
-                      a.drop-down__col-link(href='#')
-                        | Hit
-                        | Songs
-                    li.drop-down__col-item
-                      a.drop-down__col-link(href='#')
-                        | VN
-                        | Music
-                    li.drop-down__col-item
-                      a.drop-down__col-link(href='#')
-                        | Forever
-                        | USA
-                    li.drop-down__col-item
-                      a.drop-down__col-link(href='#')
-                        | V-POP
-                        | HIT
-                    li.drop-down__col-item
-                      a.drop-down__col-link(href='#')
-                        | Soraly
-                        | Music
-                .drop-down__col
-                  ul.drop-down__col-list
-                    li.drop-down__col-heading MOOD
-                    li.drop-down__col-item
-                      a.drop-down__col-link(href='#')
-                        | Rainy
-                        | Days
-                    li.drop-down__col-item
-                      a.drop-down__col-link(href='#') Love
-                    li.drop-down__col-item
-                      a.drop-down__col-link(href='#')
-                        | Sad
-                        | Melody
-                    li.drop-down__col-item
-                      a.drop-down__col-link(href='#') Relax
-                    li.drop-down__col-item
-                      a.drop-down__col-link(href='#') Motivation
-                .drop-down__col
-                  ul.drop-down__col-list
-                    li.drop-down__col-heading WORK
-                    li.drop-down__col-item
-                      a.drop-down__col-link(href='#')
-                        | Spa
-                        | Yoga
-                    li.drop-down__col-item
-                      a.drop-down__col-link(href='#') Party
-                    li.drop-down__col-item
-                      a.drop-down__col-link(href='#') Fuck
-                    li.drop-down__col-item
-                      a.drop-down__col-link(href='#') Travel
-                    li.drop-down__col-item
-                      a.drop-down__col-link(href='#') Coffee
-                    li.drop-down__col-item
-                      a.drop-down__col-link(href='#') Weekend
-          li.top-nav__list-item
-            a.top-nav__list-item-link(href='#') MV
-            .list-item__drop-down
-              .drop-down__row
-                .drop-down__col
-                  ul.drop-down__col-list
-                    li.drop-down__col-heading VIETNAM
-                    li.drop-down__col-item
-                      a.drop-down__col-link(href='#')
-                        | Young
-                        | Music
-                    li.drop-down__col-item
-                      a.drop-down__col-link(href='#')
-                        | Lyrical
-                        | Music
-                    li.drop-down__col-item
-                      a.drop-down__col-link(href='#') HomeTown
-                    li.drop-down__col-item
-                      a.drop-down__col-link(href='#')
-                        | VN
-                        | Rap
-                    li.drop-down__col-item
-                      a.drop-down__col-link(href='#')
-                        | VN
-                        | Rock
-                .drop-down__col
-                  ul.drop-down__col-list
-                    li.drop-down__col-heading AMERICAN
-                    li.drop-down__col-item
-                      a.drop-down__col-link(href='#') Pop
-                    li.drop-down__col-item
-                      a.drop-down__col-link(href='#') Rock
-                    li.drop-down__col-item
-                      a.drop-down__col-link(href='#') Country
-                    li.drop-down__col-item
-                      a.drop-down__col-link(href='#') R&amp;B
-                    li.drop-down__col-item
-                      a.drop-down__col-link(href='#') Electronic
-                .drop-down__col
-                  ul.drop-down__col-list
-                    li.drop-down__col-heading ASIAN
-                    li.drop-down__col-item
-                      a.drop-down__col-link(href='#') Korean
-                    li.drop-down__col-item
-                      a.drop-down__col-link(href='#') Japan
-                    li.drop-down__col-item
-                      a.drop-down__col-link(href='#') China
-                    li.drop-down__col-item
-                      a.drop-down__col-link(href='#') Indian
-                .drop-down__col
-                  ul.drop-down__col-list
-                    li.drop-down__col-heading CONCERT
-                    li.drop-down__col-item
-                      a.drop-down__col-link(href='#') Classical
-                    li.drop-down__col-item
-                      a.drop-down__col-link(href='#') Piano
-                    li.drop-down__col-item
-                      a.drop-down__col-link(href='#') Guitar
-                    li.drop-down__col-item
-                      a.drop-down__col-link(href='#') Violin
-                    li.drop-down__col-item
-                      a.drop-down__col-link(href='#') Cello
+                      a.drop-down__col-link(href='#') Cello         
           li.top-nav__list-item
             a.top-nav__list-item-link(href='#') ALBUM
             .list-item__drop-down
@@ -279,47 +146,47 @@ body
                   ul.drop-down__col-list
                     li.drop-down__col-heading VIETNAM
                     li.drop-down__col-item
-                      a.drop-down__col-link(href='#')
+                      a.drop-down__col-link(href='/list-song/vn/young-music')
                         | Young
                         | Music
                     li.drop-down__col-item
-                      a.drop-down__col-link(href='#')
+                      a.drop-down__col-link(href='/list-song/vn/lyrical-music')
                         | Lyrical
                         | Music
                     li.drop-down__col-item
-                      a.drop-down__col-link(href='#') HomeTown
+                      a.drop-down__col-link(href='/list-song/vn/hometown') HomeTown
                     li.drop-down__col-item
-                      a.drop-down__col-link(href='#')
+                      a.drop-down__col-link(href='/list-song/vn/vn-rap')
                         | VN
                         | Rap
                     li.drop-down__col-item
-                      a.drop-down__col-link(href='#')
+                      a.drop-down__col-link(href='/list-song/vn/vn-rock')
                         | VN
                         | Rock
                 .drop-down__col
                   ul.drop-down__col-list
                     li.drop-down__col-heading AMERICAN
                     li.drop-down__col-item
-                      a.drop-down__col-link(href='#') Pop
+                      a.drop-down__col-link(href='/list-song/american/pop') Pop
                     li.drop-down__col-item
-                      a.drop-down__col-link(href='#') Rock
+                      a.drop-down__col-link(href='/list-song/american/rock') Rock
                     li.drop-down__col-item
-                      a.drop-down__col-link(href='#') Country
+                      a.drop-down__col-link(href='/list-song/american/country') Country
                     li.drop-down__col-item
-                      a.drop-down__col-link(href='#') R&amp;B
+                      a.drop-down__col-link(href='/list-song/american/r&b') R&amp;B
                     li.drop-down__col-item
-                      a.drop-down__col-link(href='#') Electronic
+                      a.drop-down__col-link(href='/list-song/american/electronic') Electronic
                 .drop-down__col
                   ul.drop-down__col-list
                     li.drop-down__col-heading ASIAN
                     li.drop-down__col-item
-                      a.drop-down__col-link(href='#') Korean
+                      a.drop-down__col-link(href='/list-song/asia/korean') Korean
                     li.drop-down__col-item
-                      a.drop-down__col-link(href='#') Japan
+                      a.drop-down__col-link(href='/list-song/asia/japan') Japan
                     li.drop-down__col-item
-                      a.drop-down__col-link(href='#') China
+                      a.drop-down__col-link(href='/list-song/asia/china') China
                     li.drop-down__col-item
-                      a.drop-down__col-link(href='#') Indian
+                      a.drop-down__col-link(href='/list-song/asia/india') India
                 .drop-down__col
                   ul.drop-down__col-list
                     li.drop-down__col-heading CONCERT
