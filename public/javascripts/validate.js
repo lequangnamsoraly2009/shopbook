@@ -39,7 +39,7 @@ function Validator(options) {
 
         // Xử lý các rules khi nhấn submit
         formElement.onsubmit = e => {
-            e.preventDefault();
+            // e.preventDefault();
             // Khởi tạo biến kiểm tra form có nhập lỗi ?
             var formValid = true;
             options.rules.forEach(x => {

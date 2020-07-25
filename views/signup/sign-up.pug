@@ -6,7 +6,7 @@ block main
       .row
         .col.l-12.c-12.m-12
           .main-login
-            form#form-1.form(action='' method='POST')
+            form#form-1.form(action='/signup' method='POST')
               h3.heading SIGN-UP
               p.desc Become new member with Soraly &#x1F91E; 
               .form-group
@@ -26,6 +26,8 @@ block main
                 label.form-label(for='email') Email
                 input#email.form-control(name='email' type='text' placeholder='Ex: email@domain.com')
                 span.form-message
+                if error 
+                  .alert.alert-danger=error
               .form-group
                 label.form-label(for='password') Password &#x1F440;
                 input#password.form-control(name='password' type='password' placeholder='Password')
@@ -52,6 +54,5 @@ block footer
     ],
     errorSelector: '.form-message',
     onSubmit: data => {
-    console.log(data)
     },
     });
