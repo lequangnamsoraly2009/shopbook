@@ -12,7 +12,7 @@ let loginRoute = require('./routes/login.route')
 let signupRoute = require('./routes/signup.route')
 
 var app = express();
-var port = 3000
+var port = 3000;
 
 // Set 
 app.set('views', './views')
@@ -34,6 +34,14 @@ app.use('/signup', signupRoute)
     //Get Home
 app.get('/home', (req, res) => {
     res.render('index')
+})
+
+app.get('/', (req, res) => {
+    res.render('index')
+})
+
+app.get('/home/user', (req, res) => {
+    res.render('homeislogin')
 })
 
 

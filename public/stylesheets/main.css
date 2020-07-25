@@ -78,6 +78,13 @@
     padding-left: 25% !important;
 }
 
+.top-bar__login-2 {
+    display: block !important;
+    padding-left: 25% !important;
+    padding-top: 4px;
+    margin: 20px 0;
+}
+
 
 /* Top NavBar  */
 

@@ -64,6 +64,10 @@
     border-color: #5595e7;
 }
 
+.form-control-1:focus~.form-message-1 {
+    display: none;
+}
+
 .form-group.invalid .form-control {
     border-color: #f33a58;
 }

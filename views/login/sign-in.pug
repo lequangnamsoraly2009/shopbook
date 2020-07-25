@@ -12,10 +12,14 @@ block main
               .form-group
                 label.form-label(for='email') Email
                 input#email.form-control(name='email' type='text' placeholder='Ex: email@domain.com')
+                if error 
+                  span(style='color:red').form-message User does not exist or wrong password
                 span.form-message
               .form-group
                 label.form-label(for='password') Password &#x1F440;
                 input#password.form-control(name='password' type='password' placeholder='Password')
+                if error 
+                  span(style='color:red').form-message User does not exist or wrong password
                 span.form-message
               button.form-submit LogIn
 block footer
