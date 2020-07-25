@@ -24,7 +24,7 @@ body
       nav.top-bar
         .row.top-bar__row
           .nav-brand.c-2.m-2.l-2
-            a.top-bar__brand(href='index.html')
+            a.top-bar__brand(href='/home')
               img.top-bar__img(src='/logo/logo.png', alt='Logo')
           .top-bar__search.c-8.m-8.l-8
             input.top-bar__search-input(type='text',placeholder='Search...', aria-label='Search', aria-describedby='basic-addon1')
@@ -34,14 +34,14 @@ body
           .top-bar__modal.c-2.m-2.l-2
             a.top-bar__login(href='/login')
               p Sign-in
-            a.top-bar__login(href='/logout')
+            a.top-bar__login(href='/signup')
               p Sign-up
-            a.top-bar__login-1(href='#')
+            a.top-bar__login-1(href='/signup')
               i.fas.fa-user
       nav.top-nav
         ul.top-nav__list
           li.top-nav__list-item
-            a.top-nav__list-item-link(href='#') HOME
+            a.top-nav__list-item-link(href='/home') HOME
           li.top-nav__list-item
             a.top-nav__list-item-link(href='#') #SORALYCHART
             .list-item__drop-down
