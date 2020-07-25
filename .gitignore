@@ -1,5 +1,5 @@
 node_modules
 .env
 db.json
-db.json
+db.js
 nodemon.json
