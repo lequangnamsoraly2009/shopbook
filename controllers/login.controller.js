@@ -1,3 +1,5 @@
+var sha512 = require('js-sha512')
+
 var db = require('../db')
 
 module.exports.logIn = (req, res) => {
@@ -15,11 +17,12 @@ module.exports.postLogin = (req, res, next) => {
         })
         return;
     }
-    if (user.password !== password) {
+    if (user.password !== sha512(password)) {
         res.render('login/sign-in', {
             error: '1'
         });
         return;
     }
+    res.cookie('userId', user.id)
     res.redirect('/home/user')
 }

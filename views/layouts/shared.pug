@@ -12,6 +12,7 @@ head
   link(rel="stylesheet", href="/stylesheets/singer.css")
   link(rel="stylesheet", href="/stylesheets/song.css")
   link(rel="stylesheet", href="/stylesheets/listsong.css")
+  link(rel="stylesheet", href="/stylesheets/user.css")
   link(rel='stylesheet', href='https://unpkg.com/swiper/swiper-bundle.min.css')
   script(src="/javascripts/validate.js")
   link(href='https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,700;0,900;1,400&display=swap', rel='stylesheet')
@@ -24,7 +25,7 @@ body
       nav.top-bar
         .row.top-bar__row
           .nav-brand.c-2.m-2.l-2
-            a.top-bar__brand(href='/home')
+            a.top-bar__brand(href='/home/user')
               img.top-bar__img(src='/logo/logo.png', alt='Logo')
           .top-bar__search.c-8.m-8.l-8
             input.top-bar__search-input(type='text',placeholder='Search...', aria-label='Search', aria-describedby='basic-addon1')
@@ -32,12 +33,12 @@ body
               a.search__link(href='#')
                 i.search__icon.fas.fa-search
           .top-bar__modal.c-2.m-2.l-2
-            a.top-bar__login-2(href='#')
+            a.top-bar__login-2(href='/user')
               i.fas.fa-user
       nav.top-nav
         ul.top-nav__list
           li.top-nav__list-item
-            a.top-nav__list-item-link(href='/home') HOME
+            a.top-nav__list-item-link(href='/home/user') HOME
           li.top-nav__list-item
             a.top-nav__list-item-link(href='#') #SORALYCHART
             .list-item__drop-down

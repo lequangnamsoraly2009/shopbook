@@ -1,3 +1,4 @@
+var sha512 = require('js-sha512')
 var db = require('../db')
 let shortid = require('shortid')
 const e = require('express')
@@ -20,6 +21,8 @@ module.exports.createUser = (req, res) => {
         })
         return;
     }
+    req.body.password = sha512(req.body.password)
+    req.body.password_confirmation = sha512(req.body.password_confirmation)
     db.get('users').push(req.body).write();
     res.redirect('/login')
 }

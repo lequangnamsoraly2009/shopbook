@@ -6,4 +6,5 @@ var router = express.Router()
 router.get('/', logInController.logIn);
 router.post('/', logInController.postLogin)
 
+
 module.exports = router

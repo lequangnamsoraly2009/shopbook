@@ -1,0 +1,68 @@
+extends ../layouts/shared
+block header
+block main
+  main
+    .container
+      .row
+        .col.l-12.c-12.m-12
+          .heading-user
+            .user-background
+              img(src='/images/background/26293.jpg' alt='')
+              .user-avatar
+                a.avatar(href='#')
+                  img(src='/images/newrelease/13.jpg' alt='')
+                a.name-user(href='#')
+                  p=user.fullname
+      .row
+        .col.l-3.m-3.c-3
+          .category-user
+            ul.category-user__list
+              li.category-user__list-item(onclick="blockInformation('information-active')")
+                p  Information
+              li.category-user__list-item(onclick="blockInformation('update-information-active')")
+                p  Update Information
+              li.category-user__list-item(onclick="blockInformation('')")
+                p Change Avatar
+              li.category-user__list-item.category-user__list-item-last
+                form(action='/login' method='POST')
+                  button(type='submit',style='margin-left: 100%').form-submit  Log out
+        .col.l-9.m-9.c-9
+          .main-user
+            #information-active.item-information__user
+              ul.info-list
+                li.info-item
+                  p= 'Tên Đầy Đủ  :  '  + user.fullname
+                li.info-item
+                  p= 'Email  :  '  + user.email
+                  
+            #update-information-active.item-information__user
+              form(action='/user' method='POST')
+                .form-group.form-group-flex
+                  label.form-label(for='gender') Gender : 
+                  input#gender.form-control(name='gender' type='text')
+                .form-group.form-group-flex
+                  label.form-label(for='phone') Number Phone : 
+                  input#phone.form-control(name='phone' type='number')
+                .form-group.form-group-flex
+                  label.form-label(for='address') Address : 
+                  input#address.form-control(name='address' type='text')
+                .form-group.form-group-flex
+                  label.form-label(for='birthday') Birth Day 
+                  input#birthday.form-control(name='birthday' type='date')
+                button.update-info(type='submit') UPDATE
+  script.
+    function blockInformation(abc) {
+    var x = document.getElementById(abc);
+    if (x.classList) {
+    x.classList.toggle("active-show");
+    } else {
+    var classes = x.className.split(" ");
+    var i = classes.indexOf("active-show");
+    if (i >= 0)
+    classes.splice(i, 1);
+    else
+    classes.push("active-show");
+    x.className = classes.join(" ");
+    }
+    }
+block footer

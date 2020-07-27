@@ -1,0 +1,115 @@
+.heading-user {
+    height: 300px;
+}
+
+.user-background {
+    height: 300px;
+    position: relative;
+}
+
+.user-background img {
+    height: 300px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.user-avatar {
+    display: flex;
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: -2%;
+}
+
+.avatar {
+    margin-left: 50px;
+}
+
+.avatar img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.name-user {
+    margin-left: 50px;
+    margin-top: 100px;
+}
+
+.name-user p {
+    color: var(--color-index);
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+
+/* Info */
+
+.category-user {
+    margin-top: 20px;
+    height: 500px;
+}
+
+.category-user__list {
+    border: 2px solid rgb(243, 246, 247);
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px #999;
+}
+
+.category-user__list-item {
+    border-bottom: 2px solid rgb(223, 238, 238);
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.category-user__list-item-last {
+    border: none;
+}
+
+.category-user__list-item p {
+    margin-left: 10px;
+    color: var(--color-index);
+    cursor: pointer;
+}
+
+.item-information__user {
+    background-color: white;
+    border: 1px solid rgb(242, 245, 245);
+    border-radius: 5px;
+    display: none;
+}
+
+.info-list {
+    margin: 30px 10px;
+}
+
+.info-item p {
+    line-height: 2rem;
+}
+
+.form-group-flex {
+    margin: 10px 20px 0 20px;
+}
+
+
+/* Main user */
+
+.main-user {
+    margin-top: 20px;
+    max-height: 1000px;
+    border: 1px solid rgb(243, 246, 247);
+    box-shadow: 1px 1px 5px 1px #999;
+    border-radius: 5px;
+}
+
+.active-show {
+    display: block;
+}
+
+.update-info {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 40%;
+}
